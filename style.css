@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+}
+.container{
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(135deg,#153667,#4e085f);
+    padding: 10px;
+}
+.todoapp{
+    width: 100%;
+    max-width: 540px;
+    background:#fff;
+    margin: 100px auto 20px;
+    padding: 40px 30px 70px;
+    box-shadow: black;
+    h2{
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+    img{
+        margin-left: 10px;
+        width: 40px;
+    }
+    .row{
+        display: flex;
+        align-items: center;
+        background-color: #153667;
+        justify-content: space-between;
+        border-radius: 30px;
+        padding-left: 20px;
+        margin-bottom: 25px;
+        input{
+            flex: 1;
+            font-size: 20px;
+            outline: none;
+            border: none;
+            background: transparent;
+            color: white;
+        }
+        button{
+            border: none;
+            outline: none;
+            padding: 20px 30px;
+            border-radius: 30px;
+            background-color: #ff5945;
+            color: white;
+            font-size: 20px;
+            transition: 1s;
+        }
+        button:hover{
+            transition: 1s;
+            background-color: blueviolet;
+        }
+    }
+    ul li {
+        list-style: none;
+        user-select: none;
+        padding: 12px 8px 12px 50px;
+        cursor: pointer;
+        position: relative;
+    }
+    ul li::before{
+        content: '';
+        position: absolute;
+        height: 23px;
+        width: 30px;
+        background-image: url(picture/c9af8efe164f75b2d3aaebf5534892b0.png);
+        background-size: cover;
+        background-position: center;
+        top: 10px;
+        left: 0px;
+        
+    }
+    ul li.check{
+        text-decoration: line-through;
+    }
+    ul li.check::before{
+        height: 30px;
+        width: 30px;
+        background-image: url(picture/Eo_circle_green_checkmark.svg.png);
+        top: 7px;
+    }
+    ul li span{
+        position: absolute;
+        right: 0;
+        top: 5px;
+        width: 40px;
+        height: 30px;
+        font-size: 25px;
+        line-height: 30px;
+        text-align: center;
+    }
+    ul li span:hover{
+        background-color: #ff5945;
+        border-radius: 10px;
+    }
+}
