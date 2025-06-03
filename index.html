@@ -3,24 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>To-do list</title>
+    <title>Todo List</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
-        <div class="todoapp">
-            <h2>To-do List <img src="picture/todo.png" alt="" ></h2>
-            <div class="row">
-                <input type="text" placeholder="Input your list" id="input">
-                <button onclick="AddTask()">ADD</button>
-            </div>
-            <ul id="list-container">
-                <!-- <li class="check">Task1</li>
-                <li>Task2</li>
-                <li>Task3</li> -->
-            </ul>
+        <h1>📝 My Todo List</h1>
+        
+        <div class="input-container">
+            <input type="text" id="todoInput" placeholder="Add a new todo..." maxlength="100">
+            <button id="addBtn">Add</button>
+        </div>
+        
+        <ul id="todoList">
+            <!-- Todo items will be added here dynamically -->
+        </ul>
+        
+        <div class="empty-state" id="emptyState">
+            <p>No todos yet. Add one above to get started! 🚀</p>
+        </div>
+        
+        <div class="todo-count" id="todoCountContainer">
+            <span id="todoCount">0</span> items
+        </div>
+        <div class="delete">
+            <button id="deleteAllBtn">🧹 Delete All</button>
         </div>
     </div>
-    <script src="jonh.js"></script>
+
+    <script src="script.js"></script>
 </body>
 </html>
